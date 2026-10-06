@@ -1,0 +1,240 @@
+{
+    "_description": "Definitive palette map for 1010music Blackbox v3.12, determined by diagnostic firmware flash (April 2025). Each entry documents where the color appears in the UI based on photographic evidence.",
+    "_stock_firmware": "BLACKBOX312.bin",
+    "_palette_offset": "0x0A9D7C",
+    "_byte_order": "BGRA (little-endian ARGB32)",
+
+    "palette": {
+        "0": {
+            "stock": "#56565A",
+            "diagnostic": "#FF0000 RED",
+            "role": "pad_cell_border",
+            "confidence": "high",
+            "description": "Pad grid cell borders/outlines, frame lines separating pads on the PADS screen. Also visible as thin lines between cells on FX and mixer grids."
+        },
+        "1": {
+            "stock": "#141414",
+            "diagnostic": "#00FF00 GREEN",
+            "role": "surface_background",
+            "confidence": "high",
+            "description": "Main playing surface background: white piano keys on KEYS screen, grid cells on KEYS grid/scale mode. Also used for knob dial arcs on parameter screens and level meter bars on recording screen. This is the workhorse background color for interactive areas."
+        },
+        "2": {
+            "stock": "#FCFCFC",
+            "diagnostic": "#0000FF BLUE",
+            "role": "text_primary",
+            "confidence": "high",
+            "description": "Primary text color used everywhere: header bar text (1:1, Seq 1), parameter labels (LEVEL, PITCH, DELAY), parameter values, pad names, VEL label, toolbar text (File, Save, Load). The main readable text color."
+        },
+        "3": {
+            "stock": "#FF6AF3",
+            "diagnostic": "#FFFF00 YELLOW",
+            "role": "highlight_selected_row",
+            "confidence": "high",
+            "description": "Selected/active row highlight background in list views: highlighted setting row on TOOLS screen, selected scene on SONG screen, active FX1 slot on FX/PADS screen, selected parameter row on Conf/MOD screens. Always a background fill for the currently selected item in a list."
+        },
+        "4": {
+            "stock": "#09D7F5",
+            "diagnostic": "#FF00FF MAGENTA",
+            "role": "accent_interactive",
+            "confidence": "high",
+            "description": "Primary interactive accent: velocity slider fill bar on PADS screen, active/pressed key highlight on KEYS screen, active toggle button background (e.g. 'Loop1' on SONG screen), file browser selected item bar on PSET screen, active FX type button (FILTER), sequence grid icon backgrounds on SONG screen."
+        },
+        "5": {
+            "stock": "#FF0000",
+            "diagnostic": "#00FFFF CYAN",
+            "role": "alert_recording",
+            "confidence": "medium",
+            "description": "Recording/alert indicator. Stock is pure red. Used for REC button active state and recording-related indicators. Not prominently visible in most diagnostic photos — may overlap with [11]/[18]/[20] for alert states."
+        },
+        "6": {
+            "stock": "#09D7F5",
+            "diagnostic": "#FF8800 ORANGE",
+            "role": "fill_major_surfaces",
+            "confidence": "high",
+            "description": "THE dominant surface fill color. Empty pad cell backgrounds on PADS/FX screens, toolbar/header bar background, settings row backgrounds on TOOLS screen, black piano keys on KEYS screen, inactive tab backgrounds, modulation level indicator blocks next to knobs, unselected FX type button backgrounds. This is the most-used color in the entire UI."
+        },
+        "7": {
+            "stock": "#141414",
+            "diagnostic": "#FF69B4 HOT PINK",
+            "role": "background_panels",
+            "confidence": "medium",
+            "description": "Secondary dark background for parameter panels: the dark area behind knob groups on Main/LFO parameter screens, dark area behind FX knobs. Provides the dark backdrop for knob/dial widgets."
+        },
+        "8": {
+            "stock": "#666666",
+            "diagnostic": "#AAFF00 LIME",
+            "role": "text_secondary_labels",
+            "confidence": "medium",
+            "description": "Secondary/dimmed text for settings row labels and values on TOOLS and Conf screens (Headphone, Out 1 Vol, Launch Mode, etc). Slightly different from primary text [2] — used in list/form contexts rather than headers. In stock this was gray, making it more subdued than the white primary text."
+        },
+        "9": {
+            "stock": "#09D7F5",
+            "diagnostic": "#008888 TEAL",
+            "role": "accent_secondary",
+            "confidence": "medium",
+            "description": "Secondary accent instance. Visible as small indicator squares (e.g. tiny cyan square near pad grid icon on KEYS screen, VU meter indicator). One of the 6 stock cyan accent slots — used in more subtle accent contexts."
+        },
+        "10": {
+            "stock": "#22BB22",
+            "diagnostic": "#8800CC PURPLE",
+            "role": "indicator_active_and_play_bar",
+            "confidence": "high",
+            "description": "Active/positive state indicator AND sample play indicator bar (small bar under pad text on PADS screen showing playback progress). Stock green."
+        },
+        "11": {
+            "stock": "#BB2222",
+            "diagnostic": "#FF6666 CORAL",
+            "role": "indicator_alert",
+            "confidence": "medium",
+            "description": "Alert/negative state indicator. Stock red — used for recording states, error indicators, and warning highlights."
+        },
+        "12": {
+            "stock": "#141414",
+            "diagnostic": "#6699FF SKY BLUE",
+            "role": "background_tertiary",
+            "confidence": "medium",
+            "description": "Third dark background instance. Used for specific panel backgrounds — may appear in FX parameter areas or behind certain UI groups. Functionally same as [1] and [7] in stock (all dark)."
+        },
+        "13": {
+            "stock": "#000000",
+            "diagnostic": "#880000 DARK RED",
+            "role": "screen_black",
+            "confidence": "high",
+            "description": "True black. The base screen background behind all UI elements — visible in unused screen areas, behind the PSET file list, behind Song scenes list empty area, and as the deepest background layer."
+        },
+        "14": {
+            "stock": "#FFFFFF",
+            "diagnostic": "#008800 DARK GREEN",
+            "role": "text_list_items",
+            "confidence": "medium",
+            "description": "Text for file/preset list items (PSET browser: 'INDUSTRIAL KIT', 'ROCK KIT', etc), and possibly settings value text. In stock this was white — distinct from [2] which is the near-white used for headers. This may be the 'before first selection' menu text color you noticed."
+        },
+        "15": {
+            "stock": "#444444",
+            "diagnostic": "#000088 DARK BLUE",
+            "role": "divider_lines",
+            "confidence": "medium",
+            "description": "Thin divider/separator lines between rows in settings lists and between UI sections. Subtle border color for list row separators on TOOLS and parameter screens."
+        },
+        "16": {
+            "stock": "#707070",
+            "diagnostic": "#888800 OLIVE",
+            "role": "ui_secondary_elements",
+            "confidence": "low",
+            "description": "Mid-gray UI elements: scroll indicators, secondary borders, disabled state elements. Not prominently visible in diagnostic photos — used for subtle UI chrome."
+        },
+        "17": {
+            "stock": "#22BB22",
+            "diagnostic": "#880088 DARK MAGENTA",
+            "role": "indicator_active_alt",
+            "confidence": "medium",
+            "description": "Second active/positive indicator (stock green). May be used for active pad indicators, playback state, or mute/unmute toggles — a duplicate of [10] for contexts needing a distinct green."
+        },
+        "18": {
+            "stock": "#BB2222",
+            "diagnostic": "#008888 DARK CYAN",
+            "role": "indicator_alert_alt",
+            "confidence": "medium",
+            "description": "Second alert/negative indicator (stock red). Used in additional warning/recording contexts — a duplicate of [11]."
+        },
+        "19": {
+            "stock": "#FFFF00",
+            "diagnostic": "#FFD700 GOLD",
+            "role": "waveform_line",
+            "confidence": "high",
+            "description": "Main waveform drawing color on sample Pos/waveform screen. Also possibly used for sequence step highlights. Stock yellow."
+        },
+        "20": {
+            "stock": "#BB2222",
+            "diagnostic": "#FF8877 SALMON",
+            "role": "indicator_alert_third",
+            "confidence": "medium",
+            "description": "Third alert/negative indicator (stock red). Provides red for yet another context — possibly clipping indicators or destructive action confirmation."
+        },
+        "21": {
+            "stock": "#AAAAAA",
+            "diagnostic": "#00FF88 SPRING GREEN",
+            "role": "text_tertiary",
+            "confidence": "medium",
+            "description": "Tertiary text / light UI elements. Stock was light gray. Used for secondary labels, placeholder text, or dimmed information. Less prominent than [2] or [14]."
+        },
+        "22": {
+            "stock": "#00FFCC",
+            "diagnostic": "#FF1493 HOT PINK",
+            "role": "waveform_background",
+            "confidence": "high",
+            "description": "Waveform area background on sample Pos/waveform screen. Large pink area in diagnostic. Stock mint — also possibly used for pad/track coloring."
+        },
+        "23": {
+            "stock": "#BA00FF",
+            "diagnostic": "#00BFFF DEEP SKY BLUE",
+            "role": "pad_color_2",
+            "confidence": "low",
+            "description": "Pad/track color slot. Stock purple — another accent color for per-pad coloring or track identification."
+        },
+        "24": {
+            "stock": "#2B2B2B",
+            "diagnostic": "#8B4513 CHOCOLATE",
+            "role": "panel_inner_background",
+            "confidence": "medium",
+            "description": "Inner panel background for parameter knob boxes. The slightly-lighter-than-black fill inside the selected parameter group box on Main/LFO screens. Visible as the dark area directly behind knob widgets."
+        },
+        "25": {
+            "stock": "#046B7A",
+            "diagnostic": "#708090 SLATE GRAY",
+            "role": "accent_dimmed",
+            "confidence": "medium",
+            "description": "Dimmed/muted version of the primary accent. Stock was dark teal (dimmed cyan). Used for subtle background tints behind accent elements — e.g. the darker area behind the vel slider track."
+        },
+        "26": {
+            "stock": "#09D7F5",
+            "diagnostic": "#7CFC00 LAWN GREEN",
+            "role": "accent_meters",
+            "confidence": "medium",
+            "description": "Accent used in level/VU meters on the recording screen, and possibly as an additional accent instance. One of the 6 stock cyan slots."
+        },
+        "27": {
+            "stock": "#777100",
+            "diagnostic": "#9370DB MEDIUM PURPLE",
+            "role": "indicator_special",
+            "confidence": "low",
+            "description": "Special indicator color. Stock was olive/dark yellow. Specific use unclear — may appear in sequence step indicators or special UI states."
+        },
+        "28": {
+            "stock": "#09D7F5",
+            "diagnostic": "#FF6347 TOMATO",
+            "role": "accent_mixer_bars",
+            "confidence": "medium",
+            "description": "Accent for mixer level bars/sliders. Visible as the horizontal volume bars on the MIX screen. One of the 6 stock cyan slots."
+        },
+        "29": {
+            "stock": "#FFFFFF",
+            "diagnostic": "#7FFFD4 AQUAMARINE",
+            "role": "text_white_alt",
+            "confidence": "medium",
+            "description": "White text alternate instance. Used for text in specific contexts — possibly toolbar button text, tab labels, or value text that needs to be distinct from [2] and [14]."
+        },
+        "30": {
+            "stock": "#09D7F5",
+            "diagnostic": "#DA70D6 ORCHID",
+            "role": "tab_active_background",
+            "confidence": "high",
+            "description": "Active tab background on pad parameter screens (Main/Pos/LFO/Conf tabs at bottom). Clearly visible as purple/orchid on the active tab. One of the 6 stock cyan slots."
+        },
+        "31": {
+            "stock": "#FF6AF3",
+            "diagnostic": "#F4A460 SANDY BROWN",
+            "role": "accent_secondary_highlight",
+            "confidence": "low",
+            "description": "Secondary accent/highlight. Stock was pink — may be used for additional highlighting or per-pad color coding."
+        },
+        "32": {
+            "stock": "#FFFFFF",
+            "diagnostic": "#AFEEEE PALE TURQUOISE",
+            "role": "text_white_third",
+            "confidence": "medium",
+            "description": "Third white text instance. Stock was white — used in yet another text context. May be tab label text or button text in specific views."
+        }
+    }
+}

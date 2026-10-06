@@ -1,0 +1,252 @@
+{
+  "name": "DaisyBox Monochrome",
+  "description": "Terminal aesthetic. Black and off-white only, like a CRT running DOS or a Linux TTY. No color anywhere \u2014 just light on dark.",
+  "author": "euklides",
+  "target_version": "3.1.9",
+  "target_file": "blackbox-3.1.9.bin",
+  "theme_file": "theme-monochrome.json",
+  "operations": [
+    {
+      "type": "string_replace",
+      "old": "blackbox",
+      "new": "DaisyBox",
+      "comment": "Boot splash product name"
+    },
+    {
+      "type": "string_replace",
+      "old": "by 1010music",
+      "new": "community   ",
+      "comment": "Boot splash attribution"
+    },
+    {
+      "type": "string_replace",
+      "old": "3.1.9",
+      "new": "0.0.2",
+      "comment": "Version string"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D84",
+      "expect": "5A5656FF",
+      "bytes": "000000FF",
+      "comment": "Palette[0] pad_cell_border: #56565A -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D88",
+      "expect": "141414FF",
+      "bytes": "000000FF",
+      "comment": "Palette[1] surface_background: #141414 -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D8C",
+      "expect": "FCFCFCFF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[2] text_primary: #FCFCFC -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D90",
+      "expect": "F36AFFFF",
+      "bytes": "363D44FF",
+      "comment": "Palette[3] highlight_selected_row: #FF6AF3 -> #443D36"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D94",
+      "expect": "F5D709FF",
+      "bytes": "606870FF",
+      "comment": "Palette[4] accent_interactive: #09D7F5 -> #706860"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D98",
+      "expect": "0000FFFF",
+      "bytes": "444D55FF",
+      "comment": "Palette[5] alert_recording: #FF0000 -> #554D44"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1D9C",
+      "expect": "F5D709FF",
+      "bytes": "333333FF",
+      "comment": "Palette[6] fill_major_surfaces: #09D7F5 -> #333333"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DA0",
+      "expect": "141414FF",
+      "bytes": "000000FF",
+      "comment": "Palette[7] background_panels: #141414 -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DA4",
+      "expect": "666666FF",
+      "bytes": "AAAAAAFF",
+      "comment": "Palette[8] text_secondary_labels: #666666 -> #AAAAAA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DA8",
+      "expect": "F5D709FF",
+      "bytes": "444D55FF",
+      "comment": "Palette[9] accent_secondary: #09D7F5 -> #554D44"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DAC",
+      "expect": "22BB22FF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[10] indicator_active: #22BB22 -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DB0",
+      "expect": "2222BBFF",
+      "bytes": "282E33FF",
+      "comment": "Palette[11] indicator_alert: #BB2222 -> #332E28"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DB4",
+      "expect": "141414FF",
+      "bytes": "000000FF",
+      "comment": "Palette[12] background_tertiary: #141414 -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DBC",
+      "expect": "FFFFFFFF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[14] text_list_items: #FFFFFF -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DC0",
+      "expect": "444444FF",
+      "bytes": "000000FF",
+      "comment": "Palette[15] divider_lines: #444444 -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DC4",
+      "expect": "707070FF",
+      "bytes": "000000FF",
+      "comment": "Palette[16] ui_secondary_elements: #707070 -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DC8",
+      "expect": "22BB22FF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[17] indicator_active_alt: #22BB22 -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DCC",
+      "expect": "2222BBFF",
+      "bytes": "282E33FF",
+      "comment": "Palette[18] indicator_alert_alt: #BB2222 -> #332E28"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DD0",
+      "expect": "00FFFFFF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[19] waveform_line: #FFFF00 -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DD4",
+      "expect": "2222BBFF",
+      "bytes": "282E33FF",
+      "comment": "Palette[20] indicator_alert_third: #BB2222 -> #332E28"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DD8",
+      "expect": "AAAAAAFF",
+      "bytes": "000000FF",
+      "comment": "Palette[21] text_tertiary: #AAAAAA -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DDC",
+      "expect": "CCFF00FF",
+      "bytes": "000000FF",
+      "comment": "Palette[22] waveform_background: #00FFCC -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DE0",
+      "expect": "FF00BAFF",
+      "bytes": "000000FF",
+      "comment": "Palette[23] pad_color_2: #BA00FF -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DE4",
+      "expect": "2B2B2BFF",
+      "bytes": "000000FF",
+      "comment": "Palette[24] panel_inner_background: #2B2B2B -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DE8",
+      "expect": "7A6B04FF",
+      "bytes": "000000FF",
+      "comment": "Palette[25] accent_dimmed: #046B7A -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DEC",
+      "expect": "F5D709FF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[26] accent_meters: #09D7F5 -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DF0",
+      "expect": "007177FF",
+      "bytes": "000000FF",
+      "comment": "Palette[27] indicator_special: #777100 -> #000000"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DF4",
+      "expect": "F5D709FF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[28] accent_mixer_bars: #09D7F5 -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DF8",
+      "expect": "FFFFFFFF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[29] text_white_alt: #FFFFFF -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1DFC",
+      "expect": "F5D709FF",
+      "bytes": "444D55FF",
+      "comment": "Palette[30] tab_active_background: #09D7F5 -> #554D44"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1E00",
+      "expect": "F36AFFFF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[31] waveform_body: #FF6AF3 -> #FFE2AA"
+    },
+    {
+      "type": "hex_patch",
+      "offset": "0x0B1E04",
+      "expect": "FFFFFFFF",
+      "bytes": "AAE2FFFF",
+      "comment": "Palette[32] text_white_third: #FFFFFF -> #FFE2AA"
+    }
+  ]
+}

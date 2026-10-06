@@ -1,0 +1,16 @@
+{
+    "name": "Dark Theme",
+    "description": "Replace the default cyan/teal accent with warm orange, and adjust other colors for a darker, warmer look",
+    "author": "blackbox-re",
+    "target_version": "3.1.9",
+    "target_file": "blackbox-3.1.9.bin",
+    "operations": [
+        {
+            "type": "string_replace",
+            "old": "by 1010music",
+            "new": "by 1010music",
+            "comment": "Example: replace splash text (same length = safe)"
+        }
+    ],
+    "notes": "This is a template. Find the color palette offsets with: python3 tools/analyze.py Firmwares/BLACKBOX312.bin --json | jq .color_palette"
+}

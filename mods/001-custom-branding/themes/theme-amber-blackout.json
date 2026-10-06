@@ -1,0 +1,172 @@
+{
+    "name": "Amber Blackout",
+    "author": "euklides",
+    "description": "Black backgrounds, amber accents, warm cream text. Monochrome amber aesthetic with clear contrast between all UI elements.",
+    "palette": {
+        "0":  {
+            "role": "pad_cell_border",
+            "color": "#331A00",
+            "description": "Pad grid borders, cell outlines on PADS/FX/MIX screens. Subtle dark amber line."
+        },
+        "1":  {
+            "role": "surface_background",
+            "color": "#1A0D00",
+            "description": "Main interactive surface: piano white keys, KEYS grid cells, knob dial arcs, recording level meter bars. Should be very dark (keys are dark, arcs drawn on top)."
+        },
+        "2":  {
+            "role": "text_primary",
+            "color": "#FFE2AA",
+            "description": "Primary text EVERYWHERE: headers (1:1, Seq 1), param labels (LEVEL, PITCH), values, pad names, VEL label, toolbar text. Must contrast against both dark bg and orange surfaces."
+        },
+        "3":  {
+            "role": "highlight_selected_row",
+            "color": "#FF9A10",
+            "description": "Selected/active row highlight background: highlighted setting on TOOLS, active scene on SONG, active FX slot, selected row on Conf/MOD. Bright amber = 'you are here'."
+        },
+        "4":  {
+            "role": "accent_interactive",
+            "color": "#FF9A10",
+            "description": "Primary interactive accent: vel slider fill, pressed key highlight, active toggle buttons (Loop1), file browser selection bar, active FX type button. The 'action' color."
+        },
+        "5":  {
+            "role": "alert_recording",
+            "color": "#FF0000",
+            "description": "Recording/alert red. REC button active state. Keep red for safety visibility."
+        },
+        "6":  {
+            "role": "fill_major_surfaces",
+            "color": "#291500",
+            "description": "THE dominant surface fill: empty pad cells, toolbar/header bar bg, settings row bg, black piano keys, inactive tabs, mod indicator blocks. Should be dark — this is what was too bright last time."
+        },
+        "7":  {
+            "role": "background_panels",
+            "color": "#0D0700",
+            "description": "Dark background behind parameter knob groups on Main/LFO/FX screens. Should be near-black."
+        },
+        "8":  {
+            "role": "text_secondary_labels",
+            "color": "#CC8820",
+            "description": "Secondary text for settings rows: Headphone, Out 1 Vol, Launch Mode labels and values on TOOLS/Conf screens. Slightly dimmer than primary text [2]."
+        },
+        "9":  {
+            "role": "accent_secondary",
+            "color": "#FF9A10",
+            "description": "Secondary accent: small indicator squares, subtle accent marks. One of 6 stock cyan slots."
+        },
+        "10": {
+            "role": "indicator_active",
+            "color": "#44DD44",
+            "description": "Active/positive green: on states, playback active indicators. Keep green for semantic meaning."
+        },
+        "11": {
+            "role": "indicator_alert",
+            "color": "#FF4444",
+            "description": "Alert/negative red: recording state, error indicators. Keep red for semantic meaning."
+        },
+        "12": {
+            "role": "background_tertiary",
+            "color": "#0D0700",
+            "description": "Third dark background instance. Used for specific panel areas. Near-black."
+        },
+        "13": {
+            "role": "screen_black",
+            "color": "#000000",
+            "description": "True black. Deepest screen background behind all UI — PSET file list bg, empty Song area, base layer."
+        },
+        "14": {
+            "role": "text_list_items",
+            "color": "#FFE2AA",
+            "description": "File/preset list item text (PSET browser names), settings value text. May also be 'before first selection' menu text. Match [2] for consistency or slightly different for distinction."
+        },
+        "15": {
+            "role": "divider_lines",
+            "color": "#3D2000",
+            "description": "Divider/separator lines between rows in settings lists. Subtle amber-tinted line."
+        },
+        "16": {
+            "role": "ui_secondary_elements",
+            "color": "#4D2800",
+            "description": "Mid-level UI chrome: scroll indicators, secondary borders, disabled state elements."
+        },
+        "17": {
+            "role": "indicator_active_alt",
+            "color": "#44DD44",
+            "description": "Second active/positive green instance. Pad active indicators, mute toggles. Match [10]."
+        },
+        "18": {
+            "role": "indicator_alert_alt",
+            "color": "#FF4444",
+            "description": "Second alert/negative red instance. Match [11]."
+        },
+        "19": {
+            "role": "highlight_yellow",
+            "color": "#FFD700",
+            "description": "Yellow highlight for sequence active steps or special indicators. Gold tone."
+        },
+        "20": {
+            "role": "indicator_alert_third",
+            "color": "#FF4444",
+            "description": "Third alert red instance. Clipping or destructive action indicators. Match [11]."
+        },
+        "21": {
+            "role": "text_tertiary",
+            "color": "#996B20",
+            "description": "Tertiary text / dimmed labels. Less prominent than [2] or [14]. Muted amber."
+        },
+        "22": {
+            "role": "pad_color_1",
+            "color": "#FF9A10",
+            "description": "Pad/track color slot 1. Stock was mint. Used for per-pad coloring in mixer/sequences."
+        },
+        "23": {
+            "role": "pad_color_2",
+            "color": "#CC7A00",
+            "description": "Pad/track color slot 2. Stock was purple. Darker amber for second track color."
+        },
+        "24": {
+            "role": "panel_inner_background",
+            "color": "#1A0D00",
+            "description": "Inner fill of parameter knob boxes on Main/LFO screens. Slightly lighter than true black. Match [1]."
+        },
+        "25": {
+            "role": "accent_dimmed",
+            "color": "#4D2800",
+            "description": "Dimmed accent background. Dark amber tint behind vel slider track and other subtle accent areas."
+        },
+        "26": {
+            "role": "accent_meters",
+            "color": "#FF9A10",
+            "description": "Level/VU meter fill on recording screen. Bright amber accent."
+        },
+        "27": {
+            "role": "indicator_special",
+            "color": "#7A5500",
+            "description": "Special indicator. Stock was olive. Sequence step or specific UI state marker."
+        },
+        "28": {
+            "role": "accent_mixer_bars",
+            "color": "#FF9A10",
+            "description": "Mixer volume level bars on MIX screen. Bright amber horizontal bars."
+        },
+        "29": {
+            "role": "text_white_alt",
+            "color": "#FFE2AA",
+            "description": "White text alternate: toolbar button text, tab labels, or value text in specific views. Match [2]."
+        },
+        "30": {
+            "role": "tab_active_background",
+            "color": "#FF9A10",
+            "description": "Active tab background on pad parameter screens (Main/Pos/LFO/Conf bottom tabs). Clearly visible as the highlighted tab."
+        },
+        "31": {
+            "role": "accent_secondary_highlight",
+            "color": "#CC7A00",
+            "description": "Secondary accent highlight. Stock was pink. Additional per-pad or UI highlighting."
+        },
+        "32": {
+            "role": "text_white_third",
+            "color": "#FFE2AA",
+            "description": "Third white text instance. Tab or button text in specific views. Match [2]."
+        }
+    }
+}

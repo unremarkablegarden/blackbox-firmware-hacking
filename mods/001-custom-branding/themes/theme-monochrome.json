@@ -1,0 +1,172 @@
+{
+    "name": "Monochrome",
+    "author": "euklides",
+    "description": "Terminal aesthetic. Black and off-white only, like a CRT running DOS or a Linux TTY. No color anywhere — just light on dark.",
+    "palette": {
+        "0":  {
+            "role": "pad_cell_border",
+            "color": "#000000",
+            "description": "Pad grid borders, cell outlines on PADS/FX/MIX screens."
+        },
+        "1":  {
+            "role": "surface_background",
+            "color": "#000000",
+            "description": "Main interactive surface: piano white keys, KEYS grid cells, knob dial arcs, recording level meter bars."
+        },
+        "2":  {
+            "role": "text_primary",
+            "color": "#FFE2AA",
+            "description": "Primary text EVERYWHERE: headers, param labels, values, pad names, toolbar text."
+        },
+        "3":  {
+            "role": "highlight_selected_row",
+            "color": "#443D36",
+            "description": "Selected/active row highlight background and selected pad bg. Darker warm gray."
+        },
+        "4":  {
+            "role": "accent_interactive",
+            "color": "#706860",
+            "description": "Primary interactive accent: vel slider fill, pressed key highlight, active toggle buttons, file browser selection bar, FX type active button bg, AND play indicator bar under pad text. Less warm, slightly darker. Must differ from [3]."
+        },
+        "5":  {
+            "role": "alert_recording",
+            "color": "#554D44",
+            "description": "Recording/alert indicator and active tab bg on Tools screen. Must contrast with off-white text."
+        },
+        "6":  {
+            "role": "fill_major_surfaces",
+            "color": "#333333",
+            "description": "THE dominant surface fill: empty pad cells, toolbar/header bar bg, settings row bg, black piano keys, inactive tabs, AND waveform line. Compromise gray — shared by pads and waveform so can't be black and bright simultaneously."
+        },
+        "7":  {
+            "role": "background_panels",
+            "color": "#000000",
+            "description": "Dark background behind parameter knob groups."
+        },
+        "8":  {
+            "role": "text_secondary_labels",
+            "color": "#AAAAAA",
+            "description": "Secondary text for settings rows. Dimmer than primary."
+        },
+        "9":  {
+            "role": "accent_secondary",
+            "color": "#554D44",
+            "description": "Secondary accent: small indicator squares, also active tab bg on Tools/settings screens."
+        },
+        "10": {
+            "role": "indicator_active",
+            "color": "#FFE2AA",
+            "description": "Active/positive indicator AND sample play indicator bar under pad text on PADS screen. Full off-white for clear contrast."
+        },
+        "11": {
+            "role": "indicator_alert",
+            "color": "#332E28",
+            "description": "Alert/negative indicator. Darker warm gray — subtle, not alarming."
+        },
+        "12": {
+            "role": "background_tertiary",
+            "color": "#000000",
+            "description": "Third dark background instance."
+        },
+        "13": {
+            "role": "screen_black_and_piano_keys",
+            "color": "#000000",
+            "description": "True black. Screen background, piano black key face. Do NOT change — breaks piano keys if non-black."
+        },
+        "14": {
+            "role": "text_list_items",
+            "color": "#FFE2AA",
+            "description": "File/preset list item text."
+        },
+        "15": {
+            "role": "divider_lines",
+            "color": "#000000",
+            "description": "Divider/separator lines between rows."
+        },
+        "16": {
+            "role": "ui_secondary_elements",
+            "color": "#000000",
+            "description": "Mid-level UI chrome: scroll indicators, secondary borders."
+        },
+        "17": {
+            "role": "indicator_active_alt",
+            "color": "#FFE2AA",
+            "description": "Second active/positive indicator. Match [10]."
+        },
+        "18": {
+            "role": "indicator_alert_alt",
+            "color": "#332E28",
+            "description": "Second alert/negative indicator. Match [11]."
+        },
+        "19": {
+            "role": "waveform_line",
+            "color": "#FFE2AA",
+            "description": "Main waveform drawing on sample Pos screen. Off-white — visible on black waveform bg [22]."
+        },
+        "20": {
+            "role": "indicator_alert_third",
+            "color": "#332E28",
+            "description": "Third alert indicator. Match [11]."
+        },
+        "21": {
+            "role": "text_tertiary",
+            "color": "#000000",
+            "description": "Tertiary text / dimmed labels."
+        },
+        "22": {
+            "role": "waveform_background",
+            "color": "#000000",
+            "description": "Waveform area background on sample Pos screen. Black so waveform line [19] is visible."
+        },
+        "23": {
+            "role": "pad_color_2",
+            "color": "#000000",
+            "description": "Pad/track color slot 2."
+        },
+        "24": {
+            "role": "panel_inner_background",
+            "color": "#000000",
+            "description": "Inner fill of parameter knob boxes."
+        },
+        "25": {
+            "role": "accent_dimmed",
+            "color": "#000000",
+            "description": "Dimmed accent background."
+        },
+        "26": {
+            "role": "accent_meters",
+            "color": "#FFE2AA",
+            "description": "Level/VU meter fill."
+        },
+        "27": {
+            "role": "indicator_special",
+            "color": "#000000",
+            "description": "Special indicator."
+        },
+        "28": {
+            "role": "accent_mixer_bars",
+            "color": "#FFE2AA",
+            "description": "Mixer volume level bars."
+        },
+        "29": {
+            "role": "text_white_alt",
+            "color": "#FFE2AA",
+            "description": "White text alternate."
+        },
+        "30": {
+            "role": "tab_active_background",
+            "color": "#554D44",
+            "description": "Active tab background on pad param screens (Main/Pos/LFO/Conf). Must contrast with off-white text."
+        },
+        "31": {
+            "role": "waveform_body",
+            "color": "#FFE2AA",
+            "description": "Main waveform fill/body on sample Pos screen. Off-white so it's visible on dark waveform area background [7]."
+        },
+        "32": {
+            "role": "text_white_third",
+            "color": "#FFE2AA",
+            "description": "Third white text instance."
+        }
+    }
+}

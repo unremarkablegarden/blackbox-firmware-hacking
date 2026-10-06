@@ -1,0 +1,15 @@
+{
+    "name": "Custom Version String",
+    "description": "Change the displayed firmware version to indicate a modded build",
+    "author": "blackbox-re",
+    "target_version": "3.1.9",
+    "target_file": "blackbox-3.1.9.bin",
+    "operations": [
+        {
+            "type": "string_replace",
+            "old": "3.1.9",
+            "new": "3.1.M",
+            "comment": "M for modded — same length, safe to replace"
+        }
+    ]
+}
